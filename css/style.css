@@ -1,0 +1,116 @@
+/* debug */
+.header_nav_left,
+.header_nav_right {
+    height: 70px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 2px dashed #ffffff;
+}
+.hero_content{
+    height: 500px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 2px dashed #ffffff;
+}
+
+.pf_title {
+    height: 150px;
+    margin-top: 15px;
+    border: 2px dashed #2c3e50;
+}
+.about_title {
+    height: 150px;
+}
+.about_left,
+.about_right {
+    height: 250px;
+    border: 2px dashed #ffffff;
+}
+.about_btn {
+    height: 75px;
+}
+.contact_me {
+    height: 800px;
+}
+.footer_top_item {
+    height: 100px;
+    border: 2px dashed #ffffff;
+}
+.footer_bottom {
+    height: 125px;
+}
+/* /debug */
+
+/* common */
+.color-obs {
+    color: #2c3e50;
+}
+
+body {
+    color: #ffffff;
+}
+
+/* header */
+.header_nav {
+    background-color: #2c3e50;
+}
+
+.hero {
+    background-color: #1abc9c;
+}
+
+/* portfolio */
+.portfolio {
+    background-color: #ffffff;
+}
+.pf_item {
+    height: 350px;
+    margin: 15px 0;
+    border-radius: 20px;
+}
+#pf_item_1 {
+    background-color: #ba4b63;
+}
+#pf_item_2 {
+    background-color: #1ea4b6;
+}
+#pf_item_3 {
+    background-color: #140f0f;
+}
+#pf_item_4 {
+    background-color: #1c83c1;
+}
+#pf_item_5 {
+    background-color: #0e38b5;
+}
+#pf_item_6 {
+    background-color: #ccb2a3;
+}
+
+/* about */
+.about {
+    background-color: #1abc9c;
+}
+.about_left,
+.about_right{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* contact me */
+.contact_me {
+    background-color: #ffffff;
+}
+
+/* footer */
+.footer_top {
+    background-color: #3a546d;
+}
+.footer_top_item {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer_bottom {
+    background-color: #2c3e50;
+}
