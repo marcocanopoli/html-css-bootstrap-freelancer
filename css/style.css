@@ -43,6 +43,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.bg_color_obsidian {
+    background-color: #2c3e50;
+}
+
 .color_obsidian {
     color: #2c3e50;
 }
@@ -128,15 +132,53 @@ body {
 }
 
 /* portfolio */
-#pf_blocks {    
-    max-width: 360px;
+#portfolio {
+    text-align: center;
+}
+#portfolio h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#portfolio .ms_divider_line {
+    border-color: #2c3e50;
+    background-color: #2c3e50;
+}
+
+#pf_blocks { 
+    width: 100%;
+    line-height: 240px;
 }
 
 [id*="pf_item_"] {    
-    height: 250px;
+    height: 240px;
+    width: 100%;
     margin-top: 30px;
     border-radius: 15px;
+    text-align: center;
+    vertical-align: middle;
 }
+[id*="pf_item_"] img {
+    max-width: 90%;
+    max-height: 90%;
+}
+/* #pf_blocks { 
+    width: 460px;
+    line-height: 290px;
+}
+
+[id*="pf_item_"] {    
+    height: 290px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 30px;
+    border-radius: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+[id*="pf_item_"] img {
+    height: 280px;
+} */
 
 #pf_item_1 {
     background-color: #ba4b63;
@@ -180,9 +222,53 @@ body {
     background-color: #2c3e50;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
 
-    #pf_blocks {    
-        max-width: 100%;
+    #pf_blocks {          
+        width: 100%;
+        line-height: 220px;
     }
+    
+    [id*="pf_item_"] {    
+        height: 220px;
+        max-width: 310px;
+    }
+    [id*="pf_item_"] img {
+        height: 210px;
+    }
+    
 }
+
+@media (min-width: 992px) {
+
+    #pf_blocks {
+        width: 100%;
+        line-height: 200px;
+    }
+
+    [id*="pf_item_"] {    
+        height: 200px;
+        max-width: 270px;
+    }
+    [id*="pf_item_"] img {
+        height: 190px;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+
+    #pf_blocks {
+        width: 100%;
+        line-height: 240px;
+    }
+
+    [id*="pf_item_"] {    
+        height: 240px;
+        max-width: 330px;
+    }
+    [id*="pf_item_"] img {
+        height: 230px;
+    }
+    
+} */
