@@ -46,17 +46,44 @@
 /* /debug */
 
 /* common */
-.color-obs {
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.color_obsidian {
     color: #2c3e50;
 }
 
 /* header */
-.header_nav {
-    margin-bottom: 0;
+/* header nav */
+#header_nav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border: 0; 
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;    
     background-color: #2c3e50;
 }
 
+#header_nav.navbar-default .navbar-brand { 
+    font-size: 1.75em;
+    color: #fff;
+}
+
+#header_nav.navbar-default .navbar-nav > li > a {
+    font-size: 16px;
+    color: #fff;
+}
+#header_nav.navbar-default .navbar-nav > li > a:hover {
+    color: #1abc9c;
+}
+
+/* jumbotron */
 .jumbotron {
+    margin-top: 80px;
     margin-bottom: 0;
     background-color: #1abc9c;
 }
