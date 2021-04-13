@@ -40,16 +40,17 @@ p {
     border-color: #fff;
     transition: 0.3s;
 }
-.ms_btn:hover {
+.ms_btn:hover,
+.ms_btn:focus {
     color: #2c3e50;
     background-color: #fff;
     border-color: #fff;
 }
 
-.btn.btn_social {
+.btn.btn_round {
     font-size: 1rem;
     margin: 3px;
-    padding: 12.5px 15px;
+    padding: 10px;
     border: 2px solid #fff;
     border-radius: 50%;
 }
@@ -247,6 +248,18 @@ p {
 
 .footer_top_item {
     padding: 15px 15px;
+}
+
+.social a {   
+    position: relative; 
+    height: 60px;
+    width: 60px;
+}
+.social i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #start_bootstrap {
