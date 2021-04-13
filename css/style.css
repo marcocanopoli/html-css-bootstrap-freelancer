@@ -33,6 +33,10 @@ p {
     font-size: 1.25rem;
 }
 
+.bg_obsidian {
+    background-color: #2c3e50;
+}
+
 /* button */
 .ms_btn {
     font-weight: 500;
@@ -60,30 +64,36 @@ p {
 }
 
 /* divider */
-.ms_divider {
-    display: inline-block;
-    margin: 1.25rem 0 1.5rem;
-    line-height: 32px;
-}
+
 .ms_divider_star {
-    display: inline-block;
-    font-size: 32px;
-    vertical-align: middle;
+    height: 32px;
+    line-height: 32px;
+    margin: 1.25rem 0 1.5rem;
 }
-.ms_divider_line {
+.ms_divider_star::before,
+.ms_divider_star::after {
+    content: "";
     display: inline-block;
-    height: 0.25rem;
-    width: 6.5rem;
+    height: 4px;
+    width: 100px;
     border-radius: 1rem;
     border-color: #fff;
     background-color: #fff;
+    vertical-align: middle; 
+}
+
+.ms_divider_star i {
+    padding: 0 15px;
+    font-size: 32px;
     vertical-align: middle;
 }
-.ms_divider_line:first-child {
-    margin-right: 16px;
+
+.star_obsidian {
+    color: #2c3e50;
 }
-.ms_divider_line:last-child {
-    margin-left: 16px;
+.star_obsidian.ms_divider_star::before,
+.star_obsidian.ms_divider_star::after {
+    background-color: #2c3e50;
 }
 
 /* header */
@@ -143,47 +153,46 @@ p {
     position: relative; 
 }
 
-#pf_blocks .img_container {
+.pf_item {
     position: relative;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 30px;    
+    border-radius: 15px;
+    overflow: hidden;
 }
 
-#pf_blocks img {
+.pf_item img {
     width: 100%;
     min-width: 290px;
     max-width: 400px;
-    border-radius: 15px;
 }
-#pf_blocks .img_container .fas {
+.pf_item .fas {
     line-height: 250px;
 }
-#pf_blocks a:focus, 
-#pf_blocks a:hover {
+.pf_item a:focus, 
+.pf_item a:hover {
     color: #fff;
 }
-#pf_blocks i {
+
+.pf_overlay {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.overlay {
     height: 100%;
     width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
-    vertical-align: middle;
-    font-size: 6em;
-    border-radius: 15px;    
+    font-size: 6em; 
     background-color: #1abc9c;
     opacity: 0;
     transition: .5s ease;
 }
-#pf_blocks .img_container:hover .overlay {
+.pf_overlay i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.pf_item:hover .pf_overlay {
     opacity: 0.9;
 }
 
@@ -290,6 +299,11 @@ p {
         font-size: 3rem;
     }
 
+    .ms_divider_star::before,
+    .ms_divider_star::after {
+        width: 10%;
+    }
+    
     #header_nav.navbar-default .navbar-brand { 
         font-size: 1.75em;
     }
