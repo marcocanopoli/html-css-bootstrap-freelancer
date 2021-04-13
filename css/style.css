@@ -51,7 +51,11 @@ p {
     border-color: #fff;
 }
 
-.btn.btn_round {
+.ms_btn i {
+    margin-right: 10px;    
+}
+
+.ms_btn_round {
     font-size: 1rem;
     margin: 3px;
     padding: 10px;
@@ -62,6 +66,16 @@ p {
 .ms_btn.btn-lg {
     padding: 16px 28px;
 }
+
+.ms_btn_green {
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+} 
+.ms_btn_green:hover {
+    color: #fff;
+    background-color: #159a80;
+    border-color: #159a80;
+} 
 
 /* divider */
 
@@ -224,30 +238,24 @@ p {
     background-color: #2c3e50;
 }
 
-#contact_form {    
+#ms_form {
     text-align: left;
+    text-transform: capitalize;
     color: #69707a;
 }
-#contact_form label {
+#ms_form .form-control {
+    margin-top: 15px;
+    padding: 15px 0 45px;
+    border: none;
+    border-bottom: 1px solid rgba(105, 112, 122, 0.5);
+    box-shadow: none;
+}
+#ms_form input,
+#ms_form textarea {
     font-family: 'Lato', sans-serif;
     font-size: 1.5em;
     font-weight: 400;
-    text-transform: capitalize;
 }
-#contact_form .form-control {
-    border: none;
-    border-bottom: 1px solid rgba(204, 204, 204, 0.6);
-    -webkit-box-shadow: none;
-}
-#contact_form .ms_btn {
-    background-color: #1abc9c;
-    border-color: #1abc9c;
-} 
-#contact_form .ms_btn:hover {
-    color: #fff;
-    background-color: #159a80;
-    border-color: #159a80;
-} 
 
 /* footer top */
 .footer_top {
@@ -259,6 +267,14 @@ p {
     padding: 15px 15px;
 }
 
+.social {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.social li {
+    display: inline-block;
+}
 .social a {   
     position: relative; 
     height: 60px;
